@@ -1,0 +1,75 @@
+body
+{
+    height: 550vh;
+    
+}
+.parent
+{
+    background-color: #C4CB98;
+    position: relative;
+    height: 100vh;
+}
+.three
+{
+    height: 10vh;
+    width: 100%;
+    background-color:cadetblue;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.one
+{
+    height: 50vh;
+    width: 30vw;
+    position: absolute;
+    background-color: #E8EEC2 ;
+    border: 3px dashed #AFB1A2  ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-left-color: #F9EE07;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-bottom-color: #F9EE07;
+
+}
+.two
+{
+    height: 10vh;
+    width: 5vw;
+    display: block;
+    background-color: #F0C3A4 ;
+    font-size: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 0%;
+}
+.tran
+{
+    height: 10vh;
+    width: 10vw;
+    background-color: #07F9EE;
+    transform: rotate(160deg);
+    transition: 2s;
+}
+.tran1
+{
+    height: 10vh;
+    width: 10vw;
+    background-color: #B5F1A5 ;
+    transform: skew(45deg);
+    transition: 2s;
+}
+.tran2
+{
+    height: 10vh;
+    width: 10vw;
+    background-color: #F1B1A5  ;
+    transform: scale(2,1);
+    transition: 2s;
+} 

@@ -1,0 +1,15 @@
+.itemP
+{
+    height: 100vh;
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    background-color: aliceblue;
+}
+.item
+{
+    background-color: blue;
+    height: 10vh;
+    width: 30vw;
+}
