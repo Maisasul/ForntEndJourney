@@ -1,0 +1,153 @@
+.imgC
+{
+    position: relative;
+    background-image: url(/static/imgs/olav.jpg);
+    background-size: 100% 100%;
+    width: 650px;
+    height: 450px;
+    overflow: hidden;
+    transform: 3s;
+}
+.imgC::after
+{
+    content: '';
+    position: absolute;
+    background-color: rgba(255, 99, 71, 0.6);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.imgC:hover::after
+{
+    top: 100%;
+    transition: 3s;
+    left: 50%;
+}
+.right::before
+{
+    content: '';
+    position: absolute;
+    background-color: rgba(255, 99, 71, 0.6);
+    /* top: 0; */
+    right: 0; 
+    height: 100%;
+    width: 100%;
+}
+.right:hover::before
+{
+    top: 100%;
+    transition: 3s;
+    right: 100%; 
+}
+.items
+{
+    height: 100px;
+    width: 100px;
+    background-color: #000;
+    animation-name: anim;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes anim
+{
+    0%{
+        background-color: red;
+    }
+    50%{
+        background-color: yellow;
+    }
+    100%{
+        background-color: green;
+    }
+}
+.cir{
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    border: 6px solid cornflowerblue;
+    background-color:greenyellow;
+    border-top-color: transparent;
+    animation-name: anim1;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+}
+@keyframes anim1
+{
+   from{
+    transform: rotate(-360deg);
+   }
+   to{
+    transform: rotate(360deg);
+   }
+}
+.light
+{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #000;
+    
+}
+.r{
+    animation-name: rn;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+}
+.light .y{
+    animation-name: yn;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+}
+.light .g{
+    animation-name: gn;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+}
+@keyframes rn{
+    0%{
+        background-color: #fff;
+    }
+    20%{
+        background-color: red;
+    }
+    100%
+    {
+        background-color: #fff;
+
+    }
+}
+@keyframes yn{
+    0%{
+        
+        background-color: #fff;
+    }
+    50%{
+        background-color: yellow;
+    }
+    100%{
+        background-color: #fff;
+    }
+}
+@keyframes gn{
+    0%{
+        background-color: #fff;
+    }
+    50%{
+        background-color: green;
+    }
+    100%{
+        background-color: #fff;
+    }
+}
